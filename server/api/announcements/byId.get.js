@@ -1,6 +1,7 @@
 import db from '../../db';
 import { getQuery } from 'h3';
 
+// Получение объявления по ИД
 export default defineEventHandler(async (event) => {
   const query = getQuery(event);
   const id = query.id;

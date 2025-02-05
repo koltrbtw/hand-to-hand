@@ -1,6 +1,7 @@
 import db from '../../db';
 import { encryptHash, randomHash } from '../../hash.js'
 
+// Авторизация
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const { login, password } = body;

@@ -1,4 +1,5 @@
 <template>
+    <!-- Регистрация -->
     <section class="auth">
         <img class="logo" @click="goIndex()" src="/img/logo.png">
 
@@ -34,6 +35,7 @@ export default {
     },
 
     methods: {
+        // Попытка регистрации
         trySignUp: async function() {
             if (this.password != this.repeatPassword)
             {

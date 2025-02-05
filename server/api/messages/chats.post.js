@@ -1,6 +1,7 @@
 import db from '../../db';
 import { getUserIdByToken } from '../../user'
 
+// Получить доступные чаты
 export default defineEventHandler(async (event) => {
 
   const body = await readBody(event);

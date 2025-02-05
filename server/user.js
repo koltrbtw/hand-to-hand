@@ -1,5 +1,6 @@
 import db from './db.js';
 
+// Получить пользователя по токену
 export const getUserIdByToken = async function(token) {
     const conn = await db.getConnection();
 

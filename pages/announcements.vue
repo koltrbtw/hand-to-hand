@@ -1,4 +1,6 @@
 <template>
+    <!-- Объявления -->
+
     <header>
         <img class="logo" @click="goIndex()" src="/img/logo.png">
 
@@ -123,6 +125,7 @@ export default {
             this.isInAccount = response.success;
         },
 
+        // Применение фильтров
         applyFilters: async function() {
             if (this.$route.query.category !== undefined)
                 this.categoryId = this.$route.query.category;
@@ -140,6 +143,7 @@ export default {
             this.announcements = response.data;
         },
 
+        // Применить
         apply: async function() {
             let params = [];
 

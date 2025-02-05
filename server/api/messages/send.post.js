@@ -1,6 +1,7 @@
 import db from '../../db';
 import { getUserIdByToken } from '../../user'
 
+// Отправить сообщение пользователю
 export default defineEventHandler(async (event) => {
 
   const body = await readBody(event);

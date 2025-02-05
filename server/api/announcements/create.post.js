@@ -3,6 +3,7 @@ import fs from 'fs';
 import formidable from 'formidable';
 import { getUserIdByToken } from '../../user'
 
+// Создание объявления
 export default defineEventHandler(async (event) => {
   const form = formidable({ multiples: true });
 

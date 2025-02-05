@@ -1,4 +1,6 @@
 <template>
+    <!-- Чаты -->
+
     <header>
         <img class="logo" @click="goIndex()" src="/img/logo.png">
 

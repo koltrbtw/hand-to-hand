@@ -1,5 +1,6 @@
 import db from '../../db';
 
+// Проверка токена
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const { token } = body;

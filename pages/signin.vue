@@ -1,4 +1,6 @@
 <template>
+    <!-- Авторизация -->
+
     <section class="auth">
         <img class="logo" @click="goIndex()" src="/img/logo.png">
 
@@ -30,6 +32,7 @@ export default {
     },
 
     methods: {
+        // Попытка авторизоваться
         trySignIn: async function() {
             const response = await $fetch('/api/auth/signin', { method: "POST", body: {
                 login: this.login, password: this.password

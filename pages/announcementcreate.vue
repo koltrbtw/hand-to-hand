@@ -1,4 +1,6 @@
 <template>
+    <!-- Создание объявления -->
+
     <header>
         <img class="logo" @click="goIndex()" src="/img/logo.png">
 
@@ -137,6 +139,7 @@ export default {
             this.isInAccount = response.success;
         },
 
+        // Создание
         complete: async function() {
             if (this.images === null)
                 return;

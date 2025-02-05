@@ -1,4 +1,6 @@
 <template>
+    <!-- Главная страница -->
+
     <header>
         <img class="logo" src="/img/logo.png">
 
@@ -149,6 +151,7 @@ export default {
             await navigateTo('/announcements?words=' + this.searchWords);
         },
 
+        // Полученик рекомендаций
         getRecommended: async function() {
             const response = await $fetch('/api/announcements/recommended');
 

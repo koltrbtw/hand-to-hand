@@ -1,4 +1,6 @@
 <template>
+    <!-- Объявление -->
+
     <header>
         <img class="logo" @click="goIndex()" src="/img/logo.png">
 
@@ -98,6 +100,7 @@ export default {
             await navigateTo('/announcements?words=' + this.searchWords);
         },
 
+        // Удалить
         remove: async function() {
             const authToken = useCookie("authToken");
 
@@ -148,16 +151,13 @@ export default {
             this.imageIndex = this.imageIndex + delta < 0 ? this.announcement.images.length - 1 : this.imageIndex + delta == this.announcement.images.length ? 0 : this.imageIndex + delta;
         },
 
-        
-
+        // Получение информации
         getInformation: async function() {
             const response = await $fetch(`/api/announcements/byId?id=${this.$route.query.id}`);
 
             this.announcement = response.announcement;
             console.log(this.announcement)
         },
-
-        
     }
 }
 
