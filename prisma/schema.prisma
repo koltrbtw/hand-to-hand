@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  login     String   @unique
+  firstName String
+  lastName  String
+  password  String
+  createdAt DateTime @default(now())
+  avatarUrl String?  @db.VarChar(255)
+
+  advertisements    Advertisement[]
+  favorites         FavoriteAdvertisement[]
+  dialogsFirst      Dialog[]                @relation("FirstUserDialogs")
+  dialogsSecond     Dialog[]                @relation("SecondUserDialogs")
+  Message           Message[]
+  feedbacksLeft     Feedback[]              @relation("FeedbackFrom")
+  feedbacksReceived Feedback[]              @relation("FeedbackTo")
+  Feedback          Feedback[]
+}
+
+model Feedback {
+  id         Int      @id @default(autoincrement())
+  fromUserId Int
+  toUserId   Int
+  rating     Int
+  text       String
+  createdAt  DateTime @default(now())
+
+  from   User  @relation("FeedbackFrom", fields: [fromUserId], references: [id])
+  to     User  @relation("FeedbackTo", fields: [toUserId], references: [id])
+  User   User? @relation(fields: [userId], references: [id])
+  userId Int?
+}
+
+model Category {
+  id        Int    @id @default(autoincrement())
+  name      String
+  imageBlob Bytes
+
+  advertisements Advertisement[]
+  parameters     CategoryParameter[]
+}
+
+model ParameterType {
+  id         Int                 @id @default(autoincrement())
+  name       String              @unique
+  parameters CategoryParameter[]
+}
+
+model CategoryParameter {
+  id         Int    @id @default(autoincrement())
+  typeId     Int
+  categoryId Int
+  name       String
+  subData    Json
+
+  type     ParameterType @relation(fields: [typeId], references: [id])
+  category Category      @relation(fields: [categoryId], references: [id])
+  values   AdParameter[]
+}
+
+model Advertisement {
+  id            Int      @id @default(autoincrement())
+  creatorUserId Int
+  categoryId    Int
+  name          String
+  price         Int
+  description   String   @default("")
+  destination   String
+  createdAt     DateTime @default(now())
+
+  creator               User                    @relation(fields: [creatorUserId], references: [id])
+  category              Category                @relation(fields: [categoryId], references: [id])
+  images                AdvertisementImage[]
+  FavoriteAdvertisement FavoriteAdvertisement[]
+  AdParameter           AdParameter[]
+}
+
+model AdvertisementImage {
+  id              Int   @id @default(autoincrement())
+  advertisementId Int
+  contentBlob     Bytes
+
+  advertisement Advertisement @relation(fields: [advertisementId], references: [id])
+}
+
+model Dialog {
+  id          Int @id @default(autoincrement())
+  firstUserId Int
+  twoUserId   Int
+
+  firstUser  User      @relation("FirstUserDialogs", fields: [firstUserId], references: [id])
+  secondUser User      @relation("SecondUserDialogs", fields: [twoUserId], references: [id])
+  messages   Message[]
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  dialogId  Int
+  senderId  Int
+  text      String
+  createdAt DateTime @default(now())
+
+  dialog Dialog @relation(fields: [dialogId], references: [id])
+  sender User   @relation(fields: [senderId], references: [id])
+}
+
+model FavoriteAdvertisement {
+  id              Int @id @default(autoincrement())
+  userId          Int
+  advertisementId Int
+
+  user          User          @relation(fields: [userId], references: [id])
+  advertisement Advertisement @relation(fields: [advertisementId], references: [id])
+}
+
+model AdParameter {
+  id                  Int    @id @default(autoincrement())
+  advertisementId     Int
+  categoryParameterId Int
+  value               String
+
+  advertisement     Advertisement     @relation(fields: [advertisementId], references: [id])
+  categoryParameter CategoryParameter @relation(fields: [categoryParameterId], references: [id])
+}

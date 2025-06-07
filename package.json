@@ -10,13 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "formidable": "^3.5.2",
-    "fs": "^0.0.1-security",
-    "js-sha256": "^0.11.0",
-    "mariadb": "^3.4.0",
-    "nuxt": "^3.14.1592",
-    "vue": "latest",
-    "vue-router": "latest"
+    "@pinia/nuxt": "^0.11.0",
+    "@prisma/client": "^6.8.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "nuxt": "^3.17.4",
+    "prisma": "^6.8.2",
+    "v-click-outside": "^3.2.0",
+    "vue": "^3.5.14",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9"
   }
 }

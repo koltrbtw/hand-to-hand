@@ -1,0 +1,3734 @@
+.platformads {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family: Gilroy;
+}
+
+.platformads .headers {
+    width: 1180px;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.platformads .headers .profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.platformads .headers .profiles .avatar {
+    width: 39px;
+    height: 39px;
+    border-radius: 19.5px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .headers .profiles a {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.platformads .headers .profiles svg {
+    width: 15px;
+    height: 8px;
+}
+
+.platformads .headers .profiles .avatar img {
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+}
+
+.platformads .headers .profiles .avatar span {
+    display: flex;
+    height: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 4px;
+    background: rgb(44, 120, 116);
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.platformads .main {
+    width: 1180px;
+    height: 100%;
+}
+
+.platformads .footer {
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: auto;
+    width: 100%;
+    background: rgb(234, 234, 234);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 14px;
+    align-items: center;
+}
+
+.platformads .footer .links {
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .footer .infosite {
+    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .footer .social {
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .footer .social a.blocksocial {
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+    background: rgb(44, 120, 116);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .footer .social a.blocksocial svg {
+    width: 24px;
+    height: 24px;
+}
+
+.platformads .footer .infosite p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .footer .infosite p a {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .footer .links a {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.platformads .headers .search {
+    width: 700px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(44, 120, 116);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platformads .headers button {
+    width: 220px;
+    height: 40px;
+    border-radius: 6px;
+    background: rgb(130, 75, 75);
+    border: none;
+    transition: 0.25s ease-in-out;
+}
+
+.platformads .headers button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .headers .search input {
+    width: 577px;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 14px;
+    color: rgba(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .headers .search button {
+    width: 100px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    background: rgb(44, 120, 116);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .headers .search button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .headers a img {
+    width: 220px;
+    height: 84px;
+}
+
+.platformads .main .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .auth h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.platformads .main .auth h2 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .auth form {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .auth form .blockauth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 9px;
+}
+
+.platformads .main .auth form label {
+    width: 305px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .auth form button.join {
+    background: rgb(44, 120, 116);
+}
+
+.platformads .main .auth form button.create {
+    background: rgb(130, 75, 75);
+}
+
+.platformads .main .auth form button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .auth form .blockauth p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .auth form .blockauth input[type="text"],
+.platformads .main .auth form .blockauth input[type="password"]{
+    width: 305px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    padding: 8px 12px;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    outline: none;
+}
+
+.platformads .main .auth form label input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.platformads .main .auth form label span {
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .auth form label a {
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: right;
+    margin-left: auto;
+}
+
+.platformads p, h1, h2, h3, span, b {
+    margin: 0;
+}
+
+.platformads ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.platformads .headers .search button:hover {
+    background: rgb(44, 140, 116);
+    cursor: pointer;
+}
+
+.platformads .headers button:hover {
+    background: rgb(130, 55, 75);
+    cursor: pointer;
+}
+
+body, #__nuxt {
+    margin: 0px;
+    min-height: 100vh;
+}
+
+.platformads .footer .links a:hover {
+    color: rgb(44, 120, 116);
+}
+
+.platformads .footer .social a.blocksocial:hover {
+    background: rgb(44, 140, 116);
+}
+
+.platformads .main .auth form button {
+    width: 305px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: none;
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .auth form button.join:hover {
+    background: rgb(44, 140, 116);
+    cursor: pointer;
+}
+
+.platformads .main .auth form button.create:hover {
+    background: rgb(130, 55, 75);
+    cursor: pointer;
+}
+
+.platformads .main .homepage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage {
+    width: 820px;
+    height: auto;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .rightpage {
+    width: 320px;
+    height: auto;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .rightpage h1 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .rightpage .listlike {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .rightpage .listlike .blockauth {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 36px 0px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .homepage .rightpage .listlike .blockauth svg {
+    width: 20px;
+    height: 20px;
+}
+
+.platformads .main .homepage .rightpage .listlike .blockauth p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .homepage .leftpage .navigation {
+    width: 100%;
+    height: 210px;
+    --columns: 7;
+    display: grid;
+    grid-gap: 10px 20px;
+    grid-template-columns: repeat(var(--columns), [col] 1fr);
+    grid-template-rows: repeat(2, [row] 100px);
+}
+
+.platformads .main .homepage .leftpage h1 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .listads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 6px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .headerads {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(135.00deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .headerads img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .headerads:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .headerads span {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    padding: 4px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .headerads span svg {
+    width: 10px;
+    height: 10px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .like {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .nameads {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .price {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .geo {
+    margin-left: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .geo svg {
+    width: 10px;
+    height: 12px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .geo p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .price p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .nameads p {
+    max-width: 176px;
+    color: rgb(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .like svg {
+    width: 20px;
+    height: 20px;
+    stroke: #2C7874;
+}
+
+.platformads .main .homepage .leftpage .navigation .blocknav {
+    height: 100px;
+    border-radius: 20px;
+    background: linear-gradient(135.00deg, rgb(240, 240, 240) 0%,rgb(255, 255, 255) 100%);
+    box-sizing: border-box;
+    padding: 12px;
+    position: relative;
+    min-width: 100px;
+    display: block;
+    overflow: hidden;
+}
+
+.platformads .main .homepage .leftpage .navigation .blocknav p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .navigation .blocknav img {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    max-height: 75px;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .like svg.active {
+    fill: #824B4B;
+    stroke: none;
+}
+
+.platformads .main .homepage .leftpage .listads .blockads .infoads .like svg:hover {
+    fill: #824B4B;
+    stroke: none;
+}
+
+.platformads .main .homepage .leftpage .navigation .blocknav:hover {
+    background: linear-gradient(135.00deg, rgb(220, 220, 220) 0%, rgb(255, 255, 255) 100%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .headerads {
+    width: 98px;
+    height: 65px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads {
+    width: 206px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+    position: relative;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .headerads img {
+    width: 98px;
+    object-fit: contain;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .headerads:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .like {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .nameads {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .geo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .nameads p {
+    color: rgb(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .price p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .geo svg {
+    width: 10px;
+    height: 12px;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .geo p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .like svg {
+    width: 20px;
+    height: 20px;
+    stroke: #2C7874;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .like svg.active {
+    fill: #824B4B;
+    stroke: none;
+}
+
+.platformads .main .homepage .rightpage .listlike .blocklike .infoads .like svg:hover {
+    fill: #824B4B;
+    stroke: none;
+}
+
+.platformads .main .homepage .leftpage .viewingads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info {
+    width: 592px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles {
+    width: 212px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles button {
+    width: 100%;
+    height: 20px;
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    border: none;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm h1 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgb(234, 234, 234);
+    border-radius: 6px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .quickmes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .quickmes span {
+    width: auto;
+    height: 18px;
+    border-radius: 5px;
+    background: rgb(75, 75, 75);
+    padding: 3px 4px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .quickmes span:hover {
+    background: rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm input[type="text"] {
+    width: 182px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm button {
+    width: 26px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm button svg {
+    width: 13px;
+    height: 12px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm button:hover {
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm button > svg path {
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm button:hover > svg path {
+    stroke: #434343;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles button p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .useravatar {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21.5px;
+    background: linear-gradient(135.00deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .useravatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userrating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userreg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userreg p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userrating p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userrating ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userrating ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .userrating ul li svg {
+    width: 9px;
+    height: 9px;
+}
+
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .user .userinfo .username a {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .bigimages {
+    width: 100%;
+    height: 435px;
+    background: linear-gradient(135.00deg, rgb(240, 240, 240) 0%,rgb(255, 255, 255) 100%);
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .description {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications h1 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec h2 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec .mileage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 262px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec .mileage p {
+    padding: 8px 12px;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec .mileage span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border-left: 1px solid rgb(223, 223, 223);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec .spec {
+    width: 145px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: rgb(75, 75, 75);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .specifications .listspec .blockspec .spec p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .description h1 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .description p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages .blockimg {
+    width: 87px;
+    height: 64px;
+    border-radius: 4px;
+    background: linear-gradient(135.00deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgb(44, 120, 116, 0);
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages .blockimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages .blockimg.active,
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages .blockimg:hover {
+    border: 1px solid rgb(44, 120, 116);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages .blockimg:hover {
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .bigimages img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like {
+    width: auto;
+    height: 24px;
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(44, 120, 116);
+    border-radius: 6px;
+    gap: 5px;
+    transition: 0.25s ease-in-out all;
+    user-select: none;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like.active,
+.platformads .main .homepage .leftpage .viewingads .likeads .like:hover {
+    background: rgb(44, 120, 116);
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like:hover {
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like svg {
+    width: 13px;
+    height: 12px;
+    stroke: #2C7874;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like p {
+    color: rgb(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads .nameads {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads .priceads {
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads .priceads h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads .priceads p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads .nameads h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .headviewads .nameads p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like.active p {
+    color: #fff;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .info .listimages .blockimg:hover {
+    border: 1px solid rgb(44, 120, 116);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles button:hover {
+    background: rgb(44, 120, 116);
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles button:hover p {
+    color: #fff;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm button:hover {
+    background: none;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .userpm .blockpm textarea {
+    height: 60px !important;
+    width: 182px !important;
+    background: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 6px;
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+    resize: none;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like:hover {
+    background: rgb(44, 120, 116);
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like:hover svg {
+    fill: #fff;
+    stroke: none;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like:hover p {
+    color: #fff;
+}
+
+.platformads .main .homepage .leftpage .viewingads .likeads .like.active svg {
+    stroke: none;
+    fill: #fff;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads button.edit {
+    background: rgb(44, 120, 116);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads button.del {
+    background: rgb(130, 75, 75);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads button.edit:hover {
+    background: rgb(44, 140, 116);
+}
+
+.platformads .main .homepage .leftpage .viewingads .infoads .profiles .editads button.del:hover {
+    background: rgb(130, 55, 75);
+}
+
+.platformads .main .homepage .leftpage .searchads {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch {
+    width: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch {
+    width: 587px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting {
+    margin-bottom: 4px;
+    width: 155px;
+    height: 22px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 0px 7px;
+    border-radius: 5px;
+    background: rgb(234, 234, 234);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting:hover {
+    background: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads {
+    gap: 10px 14px;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting svg {
+    width: 11px;
+    height: 6px;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting ul {
+    width: 100%;
+    height: auto;
+    background: rgb(234, 234, 234);
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 0px 0px 5px 5px;
+    border-top: none;
+    position: absolute;
+    left: -1px;
+    top: 21px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting ul li {
+    width: 100%;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 7px;
+    box-sizing: border-box;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting ul li p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .namecategory {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 7px;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter h2 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .listbtn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .listbtn span.active {
+    background: rgb(75, 75, 75);
+    color: #fff;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .listbtn span {
+    height: 30px;
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputvalue {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputvalue input {
+    width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    outline: none;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0px 12px;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+    position: relative;
+    user-select: none;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter:hover {
+    background: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter p {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter svg {
+    width: 13px;
+    height: 7px;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter ul {
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: -1px;
+    top: 29px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    background: rgb(234, 234, 234);
+    border: 1px solid rgb(223, 223, 223);
+    border-top: none;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter ul li {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 12px;
+    box-sizing: border-box;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter ul li:hover {
+    opacity: 0.75;
+    cursor: pointer;
+
+    transform: scale(1.01);
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter ul li p {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .namecategory h1 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter.active ul {
+    display: flex;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter.active {
+    border-radius: 6px 6px 0px 0px;
+    border-bottom: none;
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter.active svg {
+    transform: rotate(180deg);
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .inputfilter ul li:nth-child(odd) {
+    background: rgb(242, 242, 242);
+}
+
+.platformads .main .homepage .leftpage .searchads .filtersearch .listfilter .blockfilter .listbtn span:hover {
+    background: rgb(75, 75, 75);
+    color: #fff;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting.active {
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: none;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting.active svg {
+    transform: rotate(180deg);
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting.active ul {
+    display: flex;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting ul li:nth-child(odd) {
+    background: rgb(242, 242, 242);
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .sorting ul li:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads {
+    width: 136px;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads .headerads {
+    width: 136px;
+    height: 136px;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads .headerads:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads .headerads img {
+    width: 136px;
+    height: 136px;
+    object-fit: cover;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads .infoads .like svg {
+    width: 16px;
+    height: 16px;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads .infoads .nameads p {
+    max-width: 120px;
+    color: rgb(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .homepage .leftpage .searchads .listsearch .listads .blockads .infoads .price p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .addads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .addads h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+.platformads .main .addads h2 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.platformads .main .addads .osninfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.platformads .main .addads .dopinfo {
+    width: 630px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.platformads .main .addads label {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.platformads .main .addads button {
+    width: 145px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: rgb(44, 120, 116);
+    border: none;
+}
+
+.platformads .main .addads .osninfo .infoads {
+    width: 630px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .addads .osninfo .imagesads {
+    width: 530px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .addads h3 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist .addimages {
+    width: 130px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    position: relative;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist .images {
+    width: 130px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    overflow: hidden;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist .images img {
+    width: 130px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist .addimages .plus {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist .addimages svg {
+    width: 36px;
+    height: 27px;
+}
+
+.platformads .main .addads .osninfo .imagesads .imageslist .addimages .plus svg {
+    width: 13px;
+    height: 13px;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads {
+    width: 305px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .addads .osninfo .infoads .twoblocks {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .textblock {
+    width: 100%;
+    height: 182px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .textblock textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    padding: 12px;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    outline: none;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    padding: 0px 12px;
+    position: relative;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist p {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist svg {
+    width: 13px;
+    height: 7px;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist ul {
+    width: 305px;
+    height: auto;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: -1px;
+    top: 29px;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(223, 223, 223);
+    border-top: none;
+    border-radius: 0px 0px 6px 6px;
+    background: rgb(234, 234, 234);
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist ul li {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0px 12px;
+}
+
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .inputblock {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 8px;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .inputblock input {
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px 12px;
+
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .inputblock span {
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border-left: 1px solid rgb(223, 223, 223);
+    background: rgb(234, 234, 234);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(223, 223, 223);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .addads .dopinfo .blockinfo {
+    width: 305px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .addads .dopinfo .blockinfo .inputblock {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 8px;
+}
+
+.platformads .main .addads .dopinfo .blockinfo .inputblock input {
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    border: 1px solid rgb(223, 223, 223);
+    background: rgb(234, 234, 234);
+    border-radius: 6px;
+
+    outline: none;
+    padding: 0px 12px;
+}
+
+.platformads .main .addads .dopinfo .blockinfo .inputblock span {
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border-left: 1px solid rgb(223, 223, 223);
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+    border: 1px solid rgb(223, 223, 223);
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .addads .dopinfo .blockinfo .listbtn {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .addads .dopinfo .blockinfo .listbtn span {
+    width: 145px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    transition: 0.25s ease-in-out all;
+    user-select: none;
+}
+
+.platformads .main .addads .dopinfo .blockinfo .listbtn span.active,
+.platformads .main .addads .dopinfo .blockinfo .listbtn span:hover {
+    background: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+}
+
+.platformads .main .addads .dopinfo .blockinfo .listbtn span:hover {
+    cursor: pointer;
+}
+
+.platformads .main .addads label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .addads label span {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .addads button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .addads button:hover {
+    background: rgb(44, 140, 116);
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist.active svg {
+    transform: rotate(180deg);
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist.active {
+    border-bottom: none;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist.active ul {
+    display: flex;
+}
+
+
+.platformads .main .addads .osninfo .infoads .blockinfoads .catologlist ul li:nth-child(odd) {
+    background: rgb(242, 242, 242);
+}
+
+.platformads .main .profiles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.platformads .main .profiles .profilespanel {
+    width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage {
+    width: 940px;
+    height: auto;
+}
+
+.platformads .main .profiles h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo {
+    width: 460px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar .edit {
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    background: rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    transition: 0.25s ease-in-out;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar .edit input {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar .edit svg {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    fill: #4B4B4B;
+
+    transition: 0.25s ease-in-out;
+}
+
+.platformads .main .profiles h2 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info .blockinfo {
+    width: 220px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info .blockinfo h3 {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info .blockinfo .inputblock {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info .blockinfo .inputblock input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info .blockinfo button {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0px 12px;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    border: 1px solid rgb(223, 223, 223);
+    background: rgb(234, 234, 234);
+    transition: 0.25s ease-in-out;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesinfo .info .blockinfo button:hover {
+    background: rgb(75, 75, 75);
+    color: white;
+
+    cursor: pointer;
+}
+
+.platformads .main .profiles .profilespanel .user {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.platformads .main .profiles .profilespanel .line {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.platformads .main .profiles .profilespanel .listpage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage.active {
+    background: rgb(75, 75, 75);
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+    padding: 0px 9px;
+    background: rgb(234, 234, 234);
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+}
+
+.platformads .main .profiles .profilespanel .listpage svg {
+    width: 12px;
+    height: 12px;
+    fill: rgb(75, 75, 75);
+}
+
+.platformads .main .profiles .profilespanel .listpage p {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .profilespanel .listpage span {
+    margin-left: auto;
+    height: 15px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    background: rgb(44, 120, 116);
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.platformads .main .profiles .profilespanel .user .useravatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+}
+
+.platformads .main .profiles .profilespanel .user .useravatar img {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userrating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userreg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userreg p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userrating p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userrating ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userrating ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .userrating ul li svg {
+    width: 9px;
+    height: 9px;
+}
+
+.platformads .main .profiles .profilespanel .user .userinfo .username a {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage.active svg {
+    fill: #fff;
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage.active p {
+    color: #fff;
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage:hover {
+    background: rgb(75, 75, 75);
+    cursor: pointer;
+    user-select: none;
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage:hover svg {
+    fill: #fff;
+}
+
+.platformads .main .profiles .profilespanel .listpage .blockpage:hover p {
+    color: #fff;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar .edit:hover {
+    background: rgb(44, 120, 116);
+    cursor: pointer;
+}
+
+.platformads .main .profiles .selectpage .showpage .profilesavatar .avatar .edit:hover svg {
+    fill: #fff;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads button {
+    width: 180px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: rgb(44, 120, 116);
+    border: none;
+    gap: 7px;
+    position: absolute;
+    right: 0px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 24.8px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads {
+    width: 136px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .headerads {
+    width: 136px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: linear-gradient(135.00deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .like {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .nameads {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .price {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .geo {
+    margin-left: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .geo svg {
+    width: 10px;
+    height: 12px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .geo p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .price p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .nameads p {
+    max-width: 120px;
+    color: rgb(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .like svg {
+    width: 16px;
+    height: 16px;
+    stroke: #2C7874;
+}
+
+
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .headerads img {
+    width: 136px;
+    height: 136px;
+    object-fit: cover;
+    transition: 0.25s ease-in-out all;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .headerads:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .headerads span {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    padding: 4px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .headerads span svg {
+    width: 11px;
+    height: 11px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads button svg {
+    width: 13px;
+    height: 13px;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads button:hover {
+    background: rgb(44, 140, 116);
+}
+
+.platformads .main .profiles .selectpage .showpage .pageads .listads .blockads .infoads .like svg:hover {
+    fill: #824B4B;
+    stroke: none;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews {
+    width: 424px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating {
+    width: 340px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .headrating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat .progbar {
+    margin-left: 6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background: rgb(234, 234, 234);
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat p {
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat .progbar .prog {
+    height: 3px;
+    border-radius: 1.5px;
+    background: rgb(75, 75, 75);
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .blockstat ul li svg {
+    width: 9px;
+    height: 9px;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .headrating h1 {
+    color: rgb(44, 120, 116);
+    font-family: Gilroy;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .headrating .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .headrating .title p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .statistics .rating .headrating .title span {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist {
+    width: 424px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews {
+    width: 424px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .reviewsmsg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .reviewsmsg p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .avatar {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info .rating span {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info .rating ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info .rating ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .info .rating ul li svg {
+    width: 9px;
+    height: 9px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .you {
+    width: 56px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 4px;
+    background: rgb(44, 120, 116);
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .reviewslist .blockreviews .userinfo .avatar img {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs {
+    width: 424px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog {
+    margin-left: 5px;
+    width: 740px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg {
+    width: 100%;
+    height: 620px;
+    background: rgb(234, 234, 234);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg {
+    width: 100%;
+    height: 548px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockline {
+    width: 54px;
+    height: 2px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 10px 0px;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockinput {
+    width: 560px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockinput input {
+    width: 526px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    padding: 0px 12px;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+    outline: none;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockinput button {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockinput button svg {
+    width: 22px;
+    height: 22px;
+    fill: rgba(0, 0, 0);
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .user {
+    width: 280px;
+    height: auto;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: auto;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .owner {
+    width: 280px;
+    height: auto;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .owner .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .owner .msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: max-content;
+    max-width: 100%;
+    height: auto;
+    padding: 8px 9px;
+    box-sizing: border-box;
+    border-radius: 12px 0px 12px 12px;
+    background: rgba(44, 120, 116, 0.25);
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .owner .msg p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .owner .name p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .user .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .user .msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: max-content;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px 12px 12px 12px;
+    background: rgba(130, 75, 75, 0.25);
+    padding: 8px 9px;
+    box-sizing: border-box;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .user .msg p {
+    color: rgb(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .historymsg .user .name p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgb(234, 234, 234);
+    border-radius: 6px;
+    gap: 5px;
+
+    transition: 0.25s all;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial:hover {
+    cursor: pointer;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial.active {
+    background: rgb(75, 75, 75);
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .avatar {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .infomsg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .infomsg .msg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .infomsg .nameuser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .infomsg .nameuser p {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .infomsg .msg p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Gilroy;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .avatar img {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial.active .infomsg .nameuser p {
+    color: rgb(255, 255, 255);
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial.active .msg p {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.25s all;
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial:hover {
+    background: rgb(75, 75, 75);
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial:hover .infomsg .nameuser p {
+    color: rgb(255, 255, 255);
+}
+
+.platformads .main .profiles .selectpage .showpage .listdialogs .listdial .blockdial:hover .infomsg .msg p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockinput button:hover {
+    background: rgb(44, 120, 116);
+}
+
+.platformads .main .profiles .selectpage .showpage .opendialog .dialogmsg .blockinput button:hover svg {
+    fill: #fff;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews {
+    width: 100%;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 6px;
+    background: rgb(234, 234, 234);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews textarea {
+    width: 404px;
+    height: 140px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    padding: 6px 9px;
+    resize: none;
+    outline: none;
+    color: rgba(0, 0, 0);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock button {
+    width: 145px;
+    height: 30px;
+    border-radius: 6px;
+    background: rgb(44, 120, 116);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock button p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock ul li svg {
+    width: 18px;
+    height: 18px;
+}
+
+.platformads .main .profiles .selectpage .showpage .reviews .addreviews .inputblock button:hover {
+    background: rgb(44, 140, 116);
+}

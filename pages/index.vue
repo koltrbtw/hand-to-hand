@@ -1,163 +1,72 @@
-<template>
-    <!-- Главная страница -->
+﻿<template>
+    <div class="main">
+        <div class="homepage">
+            <div class="leftpage">
+                <div class="navigation">
+                    <div
+                        v-for="cat in categories"
+                        :key="cat.id"
+                        class="blocknav"
+                        :style="{ gridColumn: cat.name === 'Работа' || cat.name === 'Транспорт' || cat.name === 'Недвижимость' || cat.name === 'Животные' ? 'span 2' : undefined }"
+                        @click="goToCategory(cat.id)"
+                    >
+                        <p>{{ cat.name }}</p>
+                        <img :src="cat.imageUrl || '/img/default.png'" alt="" />
+                    </div>
+                </div>
 
-    <header>
-        <img class="logo" src="/img/logo.png">
+                <h1>Личные рекомендации</h1>
+                <div class="listads">
+                    <div v-for="ad in ads" :key="ad.id" class="blockads">
+                        <div class="headerads" @click="goToAnnouncement(ad.id)">
+                            <img :src="ad.imageUrl || '/img/ads01.png'" alt="" />
 
-        <section class="search">
-            <input v-model="searchWords" placeholder="Введите ключевые слова...">
-            <article @click="search()">Найти</article>
-        </section>
+                            <span v-if="viewedIds.includes(ad.id)">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.96003 5.28358C9.90842 5.14913 8.65696 2 5.5 2C2.34304 2 1.09158 5.14913 1.03997 5.28358C0.986675 5.42256 0.986675 5.57758 1.03997 5.71656C1.09158 5.85087 2.34304 9 5.5 9C8.65696 9 9.90842 5.85088 9.96003 5.71642C10.0133 5.57744 10.0133 5.42256 9.96003 5.28358ZM5.5 6.66667C4.8787 6.66667 4.37497 6.14429 4.37497 5.5C4.37497 4.85571 4.8787 4.33333 5.5 4.33333C6.1213 4.33333 6.62503 4.85571 6.62503 5.5C6.62503 6.14429 6.1213 6.66667 5.5 6.66667Z" fill="white"/>
+                                </svg>
+                                Просмотрено
+                            </span>
+                        </div>
+                        <div class="infoads">
+                            <div class="like"></div>
+                            <div class="nameads">
+                                <p>{{ ad.name }}</p>
+                            </div>
+                            <div class="price">
+                                <p>{{ ad.price.toLocaleString() }} ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <section v-if="!isInAccount" @click="goSignIn()" class="btn red">Вход и регистрация</section>
-        <section v-else class="in-account">
-            <section class="icon" @click="goCreate()">
-                <img src="/img/icons/create.svg">
-            </section>
-            <section class="icon" @click="goChats()">
-                <img src="/img/icons/chat.svg">
-            </section>
-            <section class="btn red" @click="logOut()">Выйти</section>
-        </section>
-    </header>
-
-    <h1>Все категории</h1>
-
-    <section class="categories">
-        <article class="category" v-for="category in categories" @click="selectCategory(category.id)">
-            <img :src="'/img/categories/' + category.image + '.svg'">
-            <p>{{ category.name }}</p>
-        </article>
-    </section>
-
-    <h1>Рекомендованные объвления</h1>
-
-    <section class="recommended">
-        <article v-for="announcement in recommended" @click="selectAnnouncement(announcement.id)">
-            <img :src="'data:image/png;base64,' + announcement.image">
-            <h2>{{ announcement.title }}</h2>
-            <p>{{ announcement.price }} ₽</p>
-        </article>
-    </section>
+            </div>
+        </div>
+    </div>
 </template>
 
-<script>
+<script setup>
+definePageMeta({ layout: 'main' })
 
-definePageMeta({
-    layout: 'default',
-})
+const categories = ref([])
+const ads = ref([])
 
-export default {
-    data() {
-        return {
-            searchWords: "",
-            isInAccount: false,
+const router = useRouter()
 
-            recommended: [],
+const viewedIds = ref([])
 
-            categories: [
-                {
-                    id: 1,
-                    image: "vehicle",
-                    name: "Авто"
-                },
-
-                {
-                    id: 2,
-                    image: "property",
-                    name: "Недвижимость"
-                },
-
-                {
-                    id: 3,
-                    image: "device",
-                    name: "Устройства"
-                },
-
-                {
-                    id: 4,
-                    image: "furniture",
-                    name: "Мебель"
-                },
-
-                {
-                    id: 5,
-                    image: "service",
-                    name: "Услуги"
-                },
-
-                {
-                    id: 6,
-                    image: "cloth",
-                    name: "Одежда"
-                },
-            ]
-        }
-    },
-
-    mounted: async function() {
-        await this.validateToken();
-        await this.getRecommended();
-    },
-
-    methods: {
-        goCreate: async function() {
-            await navigateTo('/announcementcreate')
-        },
-
-        goChats: async function() {
-            await navigateTo('/chats')
-        },
-
-        logOut: async function() {
-            const authToken = useCookie("authToken");
-            authToken.value = undefined;
-
-            this.isInAccount = false;
-        },
-
-        goSignIn: async function() {
-            return await navigateTo('/signin');  
-        },
-
-        validateToken: async function() {
-            const authToken = useCookie("authToken");
-
-            if (authToken === undefined || authToken.value === undefined) {
-                this.isInAccount = false;
-                return;
-            }
-
-            this.isInAccount = true
-
-            const response = await $fetch('/api/auth/validate', {
-                method: "POST", body: {
-                    token: authToken.value
-                }
-            });
-
-            this.isInAccount = response.success;
-        },
-
-        selectCategory: async function(categoryId) {
-            await navigateTo('/announcements?category=' + categoryId);
-        },
-
-        selectAnnouncement: async function(announcementId) {
-            await navigateTo('/announcement?id=' + announcementId);
-        },
-
-        search: async function() {
-            await navigateTo('/announcements?words=' + this.searchWords);
-        },
-
-        // Полученик рекомендаций
-        getRecommended: async function() {
-            const response = await $fetch('/api/announcements/recommended');
-
-            this.recommended = response.data;
-        },
-    }
+function goToCategory(categoryId) {
+    router.push({ path: '/search', query: { 'c-categoryId': categoryId } })
 }
 
+function goToAnnouncement(announcementId) {
+    router.push({ path: '/announcement', query: { 'id': announcementId } })
+}
+
+onMounted(async () => {
+    categories.value = await $fetch('/api/category/all')
+    ads.value = await $fetch('/api/announcement/recommendations?limit=8')
+
+    viewedIds.value = JSON.parse(localStorage.getItem('viewed') || '[]')
+})
 </script>

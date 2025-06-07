@@ -1,15 +1,12 @@
-<template>
-    <main>
+﻿<template>
+    <div class="platformads">
+        <SiteHeader />
         <slot />
-    </main>
+        <SiteFooter />
+    </div>
 </template>
-  
-<script>
-  
-export default {
-    name: "default",
-    components: {
-    }
-}
-  
+
+<script setup>
+import SiteHeader from '~/components/SiteHeader.vue'
+import SiteFooter from '~/components/SiteFooter.vue'
 </script>
