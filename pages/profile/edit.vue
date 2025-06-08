@@ -56,11 +56,14 @@
 </template>
 
 <script setup>
+import {useToastStore} from "~/stores/toast.js";
+
 definePageMeta({ layout: 'profile' })
 
 const { $api } = useNuxtApp()
 const userStore = useUserStore()
 const user = computed(() => userStore.user)
+const toast = useToastStore()
 
 const form = reactive({
     firstName: '',
@@ -80,8 +83,6 @@ onMounted(() => {
 })
 
 function handleFileChange(e) {
-    console.log(e);
-
     const target = e.target
     const file = target.files[0]
 
@@ -121,10 +122,11 @@ async function save() {
 
         await userStore.fetchUser()
 
-        alert('Профиль обновлён!')
+        toast.showToast('Профиль обновлен', 'success')
     } catch (e) {
+        toast.showToast('При сохранении профиля произошла ошибка', 'error')
+
         console.error('Ошибка сохранения:', e)
-        alert('Ошибка при сохранении')
     }
 }
 </script>

@@ -55,12 +55,12 @@ const router = useRouter()
 
 const viewedIds = ref([])
 
-function goToCategory(categoryId) {
-    router.push({ path: '/search', query: { 'c-categoryId': categoryId } })
+async function goToCategory(categoryId) {
+    await router.push({ path: '/search', query: { 'c-categoryId': categoryId } })
 }
 
-function goToAnnouncement(announcementId) {
-    router.push({ path: '/announcement', query: { 'id': announcementId } })
+async function goToAnnouncement(announcementId) {
+    await router.push({ path: '/announcement', query: { 'id': announcementId } })
 }
 
 onMounted(async () => {

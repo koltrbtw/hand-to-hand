@@ -23,6 +23,7 @@
 
         <!-- Footer -->
         <SiteFooter />
+        <GlobalToast />
     </div>
 </template>
 
@@ -31,4 +32,5 @@ import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 import LikedPosts from '~/components/LikedPosts.vue'
 import ViewedPosts from '~/components/ViewedPosts.vue'
+import GlobalToast from '~/components/GlobalToast.vue'
 </script>

@@ -9,11 +9,11 @@ export default defineEventHandler(async (event) => {
     const body = await readBody(event)
 
     const id = Number(body.id)
-    if (!id) throw createError({ statusCode: 400, message: 'No ID provided' })
+    if (!id) throw createError({ statusCode: 400, message: 'Объявление не было найдено' })
 
     const ad = await prisma.advertisement.findUnique({ where: { id } })
     if (!ad || ad.creatorUserId !== user.id) {
-        throw createError({ statusCode: 403, message: 'Access denied' })
+        throw createError({ statusCode: 403, message: 'Это не ваше объявление' })
     }
 
     await prisma.advertisementImage.deleteMany({ where: { advertisementId: id } })

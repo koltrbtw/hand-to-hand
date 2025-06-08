@@ -31,6 +31,9 @@ definePageMeta({
     middleware: ['auth-redirect']
 })
 
+import { useToastStore } from '~/stores/toast'
+const toast = useToastStore()
+
 const login = ref('')
 const password = ref('')
 const remember = ref(false)
@@ -47,12 +50,15 @@ const handleLogin = async () => {
                 maxAge: remember.value ? 60 * 60 * 24 * 7 : undefined,
             })
             token.value = res.token;
+
+            toast.showToast('Успешная авторизация в аккаунт', 'success')
+
             await navigateTo('/')
         } else {
-            alert(res.message || 'Ошибка входа')
+            toast.showToast(res.message || 'Ошибка входа', 'error')
         }
     } catch (e) {
-        alert('Ошибка сервера')
+        toast.showToast('Ошибка сервера', 'error')
     }
 }
 </script>

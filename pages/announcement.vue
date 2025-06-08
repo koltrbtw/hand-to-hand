@@ -102,6 +102,8 @@
 
 <script setup lang="ts">
 
+import {useToastStore} from "~/stores/toast";
+
 definePageMeta({ layout: 'main' })
 
 const { $api } = useNuxtApp()
@@ -112,7 +114,9 @@ const selectedImage = ref('')
 const isTracked = ref(false)
 const token = useCookie('token')
 const isSelf = ref(false)
+
 const userStore = useUserStore()
+const toast = useToastStore()
 
 async function fetchAd() {
     const res = await $api('/announcement/get', { query: { id: route.query.id } })
@@ -145,18 +149,30 @@ async function toggleTrack() {
         method: 'POST',
         body: { id, status: newStatus },
     })
+
     if (res.status) {
         isTracked.value = newStatus
+
+        if (newStatus) {
+            toast.showToast('Объявление добавлено в избранное', 'success')
+        } else {
+            toast.showToast('Объявление было убрано из избранного', 'warning')
+        }
     }
 }
 
 async function removeAnnouncement() {
-    await $api('/announcement/delete', {
+    const res = await $api('/announcement/delete', {
         method: 'POST',
         body: { id: ad.value.id },
     })
 
-    await navigateTo('/')
+    if (res.status !== undefined) {
+        toast.showToast('Вы удалили объявление', 'warning')
+        await navigateTo('/')
+    } else {
+        toast.showToast(res.message || 'Ошибка при удалении', 'error')
+    }
 }
 
 function formatDate(dateStr: string) {
@@ -170,6 +186,7 @@ function quickMessage(text: string) {
 
 async function sendMessage() {
     if (!messageText.value.trim()) return
+
     await $api('/dialog/create', {
         method: 'POST',
         body: {
@@ -177,6 +194,7 @@ async function sendMessage() {
             text: messageText.value,
         },
     })
+
     messageText.value = ''
 
     await navigateTo(`/profile/dialog?to=${ad.value.creator.id}`)

@@ -98,10 +98,13 @@
 </template>
 
 <script setup>
+import {useToastStore} from "~/stores/toast.js";
+
 definePageMeta({ layout: 'default' })
 
 const { $api } = useNuxtApp()
 const router = useRouter()
+const toast = useToastStore()
 
 const categories = ref([])
 const categoryOpen = ref(false)
@@ -158,7 +161,10 @@ function handleFile(e) {
 }
 
 async function submit() {
-    if (!form.name || !form.price || !form.categoryId || !agreed.value) return alert('Заполните все обязательные поля и подтвердите согласие.')
+    if (!form.name || !form.price || !form.categoryId || !agreed.value) {
+        toast.showToast('Заполните все обязательные поля и подтвердите согласие', 'error')
+        return;
+    }
 
     const payload = {
         ...form,
@@ -171,9 +177,10 @@ async function submit() {
 
     const res = await $api('/api/announcement/create', { method: 'POST', body: payload })
     if (res.status) {
-        router.push(`/announcement?id=${res.id}`)
+        toast.showToast('Объявление было создано', 'success')
+        await router.push(`/announcement?id=${res.id}`)
     } else {
-        alert('Ошибка создания объявления')
+        toast.showToast('Ошибка создания объявления', 'error')
     }
 }
 </script>

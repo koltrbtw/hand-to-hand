@@ -51,12 +51,15 @@
 </template>
 
 <script setup>
+import {useToastStore} from "~/stores/toast.js";
+
 definePageMeta({ layout: 'profile' })
 
 const { $api } = useNuxtApp()
 const route = useRoute()
 const userStore = useUserStore()
 const user = computed(() => userStore.user)
+const toast = useToastStore()
 
 const viewedIds = ref([])
 
@@ -77,6 +80,7 @@ onMounted(async () => {
         const res = await $api(`/announcement/search?ownerId=${id.value}`)
         ads.value = res
     } catch (e) {
+        toast.showToast('Не удалось загрузить объявления', 'error')
         console.error('Ошибка загрузки объявлений', e)
     }
 })

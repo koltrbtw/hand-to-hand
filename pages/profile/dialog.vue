@@ -2,7 +2,7 @@
     <div class="selectpage">
         <h1>Категория</h1>
         <div class="showpage">
-            <!-- 🔹 Список диалогов -->
+            <!-- Список диалогов -->
             <div class="listdialogs">
                 <h2>Сообщения</h2>
                 <div class="listdial">
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <!-- 🔹 Открытый диалог -->
+            <!-- Открытый диалог -->
             <div class="opendialog">
                 <h2>Переписка</h2>
                 <div class="dialogmsg">
@@ -74,6 +74,8 @@
 
 
 <script setup>
+import {useToastStore} from "~/stores/toast.js";
+
 definePageMeta({ layout: 'profile' })
 
 const { $api } = useNuxtApp()

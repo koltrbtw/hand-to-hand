@@ -34,9 +34,13 @@
 </template>
 
 <script setup>
+import {useToastStore} from "~/stores/toast.js";
+
 definePageMeta({
     middleware: ['auth-redirect']
 })
+
+const toast = useToastStore()
 
 const login = ref('')
 const firstName = ref('')
@@ -46,7 +50,7 @@ const confirmPassword = ref('')
 
 const handleRegister = async () => {
     if (password.value !== confirmPassword.value) {
-        alert('Пароли не совпадают')
+        toast.showToast('Пароли не совпадают', 'error')
         return
     }
 
@@ -64,12 +68,15 @@ const handleRegister = async () => {
         if (res?.token) {
             const cookie = useCookie('token')
             cookie.value = res.token
+
+            toast.showToast('Вы зарегистрировали аккаунт', 'success')
+
             await navigateTo('/')
         } else {
-            alert(res.message || 'Ошибка регистрации')
+            toast.showToast(res.message || 'Ошибка регистрации', 'error')
         }
     } catch (e) {
-        alert('Ошибка сервера')
+        toast.showToast('Ошибка сервера', 'error')
     }
 }
 </script>

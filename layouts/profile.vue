@@ -103,17 +103,20 @@
         </div>
         <div v-else class="loading">Загрузка профиля...</div>
         <SiteFooter />
+        <GlobalToast />
     </div>
 </template>
 
 <script setup>
 import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
+import GlobalToast from '~/components/GlobalToast.vue'
 
 const route = useRoute()
 const router = useRouter()
 const { $api } = useNuxtApp()
 const userStore = useUserStore()
+const token = useCookie('token')
 
 const user = computed(() => userStore.user)
 const id = computed(() => {
@@ -133,9 +136,13 @@ const rating = ref(null)
 const isLoaded = ref(false)
 
 onMounted(async () => {
-    await userStore.fetchUser()
+    if (token.value && !userStore.user) {
+        await userStore.fetchUser()
+    } else {
+        userStore.isUserLoading = false
+    }
 
-    if (!id.value) return router.push('/')
+    if (!id.value) return await router.push('/')
 
     try {
         const res = await $api(`/account/profile?id=${id.value}`)
@@ -147,7 +154,7 @@ onMounted(async () => {
         isLoaded.value = true
     } catch (err) {
         console.error('Ошибка профиля:', err)
-        router.push('/')
+        await router.push('/')
     }
 })
 
@@ -155,10 +162,11 @@ function formatDate(date) {
     return new Date(date).toLocaleDateString('ru-RU')
 }
 
-function logout() {
+async function logout() {
     useCookie('token').value = null
     userStore.user = null
-    router.push('/')
+
+    await router.push('/')
 }
 </script>
 
